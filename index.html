@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="app">
+        <!-- Input github username -->
+        <div class="input-wrapper">
+            <input v-model="username" type="text" placeholder="Search Github Username...">
+            <button @click="getUserInfo">Get Details</button>
+        </div>
+        <!-- Display user details -->
+        <div v-if="user" :class="{display : true}">
+            <h2>{{user.name}}</h2>
+            <img :src="user.avatar_url" alt="user.name">
+            <a :href="user.html_url" target="_blank">@{{user.login}}</a>
+            <p>{{user.bio}}</p>
+            <h4>Following: {{user.following}}</h4>
+            <h4>Followers: {{user.followers}}</h4>
+            <p>Public Repos: {{user.public_repos}}</p>
+        </div>
+        <!-- Show error if user is null -->
+        <h4 v-if="error">{{error}}</h4>
+    </div>
+
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="index.js"></script>
+</body>
+</html>

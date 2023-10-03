@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hind', sans-serif;
+}
+
+.input-wrapper{
+    max-width: 80%;
+    width: 440px;
+    margin: 0 auto;
+}
+
+input{
+    height: 30px;
+    padding: 1em 1.26em;
+    border-radius: 18px;
+    font-size: .87rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 17px rgba(10, 10, 10, .57);
+}
+
+button{
+    margin-left: .7em;
+    border: none;
+    background-color: #21562a;
+    padding: 1.25em 1.26em;
+    color: #fff;
+    border-radius: 18px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: .4em;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.14rem;
+    transition: .4s all ease-in;
+}
+
+a:hover{
+    color: aqua;
+    transform: scale(1);
+}
+
+.display{
+    width: 400px;
+    max-width: 70%;
+    margin: 2em auto;
+    background-color: #21562a;
+    color: #fcf2f8;
+    padding: 1em .8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 0 17px rgba(10, 10, 10, .57);
+}
